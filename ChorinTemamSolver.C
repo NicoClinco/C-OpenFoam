@@ -36,7 +36,7 @@ Description
     This is the original Chorin-Temam solver for laminar flow
 
     \heading Solver details
-    The solver uses the PISO algorithm to solve the continuity equation:
+    The solver consists of a single predictor step and a projection step:
 
         \f[
             \div \vec{U} = 0
