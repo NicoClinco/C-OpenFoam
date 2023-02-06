@@ -28,9 +28,6 @@ Application
     Chorin&Temam
 
 
-Group
-    grpIncompressibleSolvers
-
 Description
     Transient solver for incompressible, laminar flow of Newtonian fluids.
     This is the original Chorin-Temam solver for laminar flow
@@ -66,7 +63,7 @@ Description
 \*---------------------------------------------------------------------------*/
 
 #include "fvCFD.H"
-//#include "pisoControl.H"
+
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -134,8 +131,6 @@ int main(int argc, char *argv[])
           
          U.correctBoundaryConditions();
          
-         
-
          runTime.write();
 
          runTime.printExecutionTime(Info);
